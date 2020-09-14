@@ -10,28 +10,28 @@
 
 title: Data Motivated                         # the main title
 
-tagline: A text-focused Jekyll theme.  # it will display as the sub-title
+tagline: A Place for Data Science, Physics and learning # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  Welcome to my website! Here I will discuss my journey through data science,
+  physics concepts I find interesting, and anything else I think
+  people would enjoy reading.
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'protocol://domain'
+url: 'https://ColinB19.github.io'
 
-author: your_full_name                  # change to your full name
+author: Colin Bradley                 # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
+avatar: /assets/img/pages/me.jpg   # support internet resources
 
 github:
-  username: github_username             # change to your github username
+  username: ColinB19             # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: colinbradley111            # change to your twitter username
 
 social:
-  name: your_full_name                  # it will shows as the copyright owner in Footer
+  name: Colin Bradley                 # it will shows as the copyright owner in Footer
   email: c.bradley.do@gmail.com            # change to your email address
   links:
     # The first element serves as the copyright owner's link
