@@ -35,11 +35,11 @@ social:
   email: c.bradley.do@gmail.com            # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://www.linkedin.com/in/colin-bradley-ab514a178
     - https://twitter.com/colinbradley111     # change to your twitter homepage
     - https://github.com/ColinB19      # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/colin-bradley-ab514a178
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
