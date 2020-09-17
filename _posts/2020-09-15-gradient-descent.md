@@ -1,6 +1,6 @@
 ---
 title: Gradient Descent
-date: 2020-09-15 16:00:00 +/-0700
+date: 2020-09-15 16:00:00 +/-0800
 categories: [Data Science, From Scratch Algorithms]
 tags: [jupyter, learning, machine learning]     # TAG names should always be lowercase
 image: /assets/img/posts/gradient-descent/gd.jpg
