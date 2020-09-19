@@ -116,6 +116,7 @@ Thus, given the components of a vector one could calculate both its magnitude an
 # Basic Vector Calculus
 -----------------------
 In this section, we will discuss calculus concepts such as integration, the **gradient**, the **curl**, and the **divergence**. Integration of a vector quantity alone is a fairly simple operation. One just integrates the components individually:
+
 $$
 \begin{align*}
     \int \vec{v}(t) dt = \int (v_1 (t) \hat{i} + v_2 (t) \hat{j}& + v_3 (t) \hat{k})dt\\
