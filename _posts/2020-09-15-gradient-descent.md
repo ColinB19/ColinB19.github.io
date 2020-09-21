@@ -125,7 +125,7 @@ housing_data = california_housing.fetch_california_housing()
 
 ```
 
-
+<!--
 ```python
 # pulling features and labels from dataset
 Features = pd.DataFrame(housing_data.data, columns=housing_data.feature_names)
@@ -453,7 +453,7 @@ df[['MedInc','Target']].describe()
   </tbody>
 </table>
 </div>
-
+ -->
 
 
 
@@ -471,18 +471,6 @@ plt.grid(True)
 ```
 
 ![png]({{"/assets/img/posts/gradient-descent/output_17_0.png" | absolute_url}})
-
-
-
-```python
-len(df)
-```
-
-
-
-
-    19599
-
 
 
 
