@@ -116,7 +116,7 @@ We have seen how GD works in a first principles sense, but our goal is to become
 \$$f(m,b) \equiv \frac{1}{n}\sum_{i=1}^{n} (mx_i + b - y_i)^2.\$$ Then the gradient is
 \$$\vec{\nabla}f(m,b) = \frac{1}{n}\sum_{i=1}^{n} (2x_i(mx_i + b - y_i)\hat{m}+ 2(mx_i + b - y_i)\hat{b}),\$$ where $\hat{m}$ and $\hat{b}$ denote unit vectors in the directions of the parameters. My claim is that $\hat{m}\cdot \hat{b} = 0$, this means that a change in the intercept of a line does not change its slope. Thus, we have a orthonormal basis set and can consider them as cartesian vectors (this also requires the space to be flat but I think we'll abstract ourselves from that for now).
 
-Let's simulate some data and try to fit a line to it.
+Let's grab some data and try to fit a line to it.
 
 
 ```python
@@ -537,6 +537,7 @@ def plot_regression(data, pred_m, pred_b, log=None, title="Linear Regression Wit
     plt.show()
 ```
 
+Now that we've written the required functions. Let's look at various starting points to see if we can get the best fit!
 
 ```python
 final_m, final_b, mb_log, error_log = Lin_regression(data = df,lr = 0.075, epoch = 100,m = 0.5, b=0.1)
