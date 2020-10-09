@@ -3,7 +3,7 @@ title: EDA: Gooodbooks-10k
 date: 2020-10-09 16:00:00 +/-0800
 categories: [Data Science, Book Recommender]
 tags: [jupyter, eda, visualization, matplotlib, pandas]     # TAG names should always be lowercase
-image: /assets/img/posts/book-rec-eda/header.jpg # from https://unsplash.com/photos/mcSDtbWXUZU
+image: /assets/img/posts/book_rec_eda/header.jpg # from https://unsplash.com/photos/mcSDtbWXUZU
 math: true
 ---
 
