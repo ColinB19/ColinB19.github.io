@@ -7,12 +7,9 @@ image: /assets/img/posts/knn/knn.jpg
 math: true
 ---
 
-
-# k-Nearest-Neighbors from Scratch
-
 Let's look at coding up one of the simplest machine learning (ML) algorithms: k-Nearest-Neighbors (kNN). kNN is a supervised ML algorithm that classifies an object based on some distance metric from other labeled objects. The idea is, for a given item, you will calculate the distance between that item and all other items. You then take the k-nearest-neighbors and then they vote on what the item label should be.
 
-## Introduction
+# Introduction
 
 We will dive into the example of the iris data set! We're just going to load in the iris data set from `sklearn.datasets` to test our code. This data set contains petal and sepal length and width data for three classes of flowers: *Setosa*, *Versicolour*, *Virginica*. Check out [this link](https://archive.ics.uci.edu/ml/datasets/iris) for more information!
 
@@ -120,9 +117,6 @@ train.head()
 </div>
 
 
-
-## Introduction
-
 Supervised learning is a ML technique that relies on labeled input data to discover a function that transforms the input features into the desired output. This is a fairly intuitive way to learn as it is how a lot of human learning is done. If you want to teach a child about cats you show them pictures of cats. Then, when given new pictures of cats, the child should be able to correctly identify them.
 
 kNN is a supervised learning algorithm which takes in labeled data, computes the "distance" of each instance to a test instance. Then votes on the label for the test instance based on the k-nearest-neighbors! To illustrate this, let's take a look at a few of the features of the iris data set. We will plot the three flowers in the training set as well as a test instance.
@@ -168,7 +162,7 @@ ax.set_title('Scatter plot of dimensions of the iris data set flowers')
 Clearly, to the naked eye, the test instance should belong to the *Setosa* class. kNN is a way of quantifying what your eye has already determined! First you establish a distance metric (say euclidean). Then you find the k-nearest-neighbors (which, for this case, should all have labels of *Setosa*). And then those neighbors vote on which label to give to the test instance. Great!
 
 
-## A distance metric
+# A distance metric
 In order for kNN to work, we need to establish a distance metric. This metric quantifies how close any two items are. A really straight forward example is points on a map. Say I have two coordinates on a map and I want to quantify how close these points are. What is the best way to quantify this? Well, if the map is nice and flat then the distance between the two points seems to be a good metric. How do I compute this? Well you define a coordinate system, subtract the position vectors of the two points and then find the magnitude of the resulting vector. This is called the **Euclidean distance** and it is what we will use here. For two $N$-dimensional vectors $\vec{u}$ and $\vec{v}$, the **Euclidean distance** between them is defined as
 \$$
 d_{\vec{u}\to\vec{v}} = \sqrt{\sum_{i=1}^{N} (v_i - u_i)^2}.
@@ -201,7 +195,7 @@ print(check)
     The distance between (1,0) and (-1,0) is 2.0.
 
 
-## Writing kNN
+# Writing kNN
 
 Now that we have a distance metric, we should code up our kNN algorithm. Let's write three functions to do this:
 
@@ -292,7 +286,7 @@ for k in k_list:
     Testing k = 15...
     Congrats, you have 96.67% accuracy!
 
-### Testing other metrics
+## Testing other metrics
 This is pretty good. If we were being good about ML we would perform some cross validation but we are really just demonstrating the method here. I would like to see how these results differ with different metrics! Let's test out Cosine distance and then the L1 norm. Note there are MANY distance measures and diving into which ones perform the best could constitute an entirely separate post.
 
 ```python
@@ -345,7 +339,7 @@ for k in k_list:
     Congrats, you have 96.67% accuracy!
 
 
-## New Data and Library Implementations
+# New Data and Library Implementations
 
 Let's load a new data set to test how our algorithm compares with library implementations. We will use `scikit-learn` as the implementation library. We will also take advantage of some `magic` to see how the speed of our method compares with that of `scikit-learn`.
 
@@ -409,7 +403,7 @@ print("Congrats, you have {:.2%} accuracy!".format(score))
     5.85 ms ± 715 µs per loop (mean ± std. dev. of 7 runs, 3 loops each)
 
 
-# Holy library implementation Batman, that was fast!
+## Holy library implementation Batman, that was fast!
 
 Well, as you can see, the `sklearn` implementation was almost a factor of $10^3$ faster than our home-brew method. The good news is our algorithm provided the same accuracy as the library implementation so... at least we have that going for us. In all reality we should have expected the library implementation to be significantly faster as it has been professionally developed and polished over time.
 

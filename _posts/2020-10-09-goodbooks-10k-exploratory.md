@@ -1,5 +1,5 @@
 ---
-title: EDA: Gooodbooks-10k
+title: EDA (Gooodbooks-10k)
 date: 2020-10-09 16:00:00 +/-0800
 categories: [Data Science, Book Recommender]
 tags: [jupyter, eda, visualization, matplotlib, pandas]     # TAG names should always be lowercase
@@ -9,7 +9,7 @@ math: true
 
 # Exploring the GoodBook-10K Dataset
 
-I love books. They provide an escape from reality which, if we're honest, we all really need right now. Some of my favorite time spent with myself is when I'm pouring through *Lord of the Rings* or *The Wheel of Time*. Whenever I finish a series I am always looking toward the next great story! This is why I thought it would be fun to build a book recommender! For now I will be using the goodbook-10k data set available from [here](https://github.com/zygmuntz/goodbooks-10k) and [here](https://maciejkula.github.io/spotlight/datasets/goodbooks.html). This post goes through the exploratory data analysis (EDA) I performed on the dataset before I did any modelling (which should always be the first step in any data science project!). [This person](https://www.kaggle.com/philippsp/book-recommender-collaborative-filtering-shiny) does some really great analysis on this data set (an older version of it). I will be reproducing some of their results here.
+I love books. They provide an escape from reality which, if we're honest, we all really need right now. Some of my favorite time spent with myself is when I'm pouring through *Lord of the Rings* or *The Wheel of Time*. Whenever I finish a series I am always looking toward the next great story! This is why I thought it would be fun to build a book recommender! For now I will be using the goodbook-10k data set available from [here](https://github.com/zygmuntz/goodbooks-10k) and [here](https://maciejkula.github.io/spotlight/datasets/goodbooks.html). This post goes through the exploratory data analysis (EDA) I performed on the data set before I did any modeling (which should always be the first step in any data science project!). [This person](https://www.kaggle.com/philippsp/book-recommender-collaborative-filtering-shiny) does some really great analysis on this data set (an older version of it). I will be reproducing some of their results here.
 
 
 ```python
