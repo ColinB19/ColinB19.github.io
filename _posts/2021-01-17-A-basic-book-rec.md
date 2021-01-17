@@ -6,9 +6,20 @@ tags: [jupyter, machine learning, pandas, gradient descent]     # TAG names shou
 image: /assets/img/posts/basic-book-rec/header.jpg # from https://unsplash.com/photos/mcSDtbWXUZU
 math: true
 ---
+# Why a Recommender?
+Recommender systems are in use in almost every contemporary sales setting. The canonical example is how Netflix knows what you may want to watch. But this technology can also be seen at Amazon, Youtube and LinkedIn. Companies leverage this technology to provide customers with the best experience possible (a pleasant side effect is the maximization of profits).
 
-# Import and class definitions
-Thanks to [Radu Marcusu](https://unsplash.com/photos/mbKApJz6RSU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) for the header photo!
+Since these systems are so prevalent in modern sales, I decided I would build one! Since reading is one of my favorite hobbies, I decided to build a system that could recommend new books to me. I always feel a sense of emptiness after finishing a series (some of my favorites include Harry Potter, Wheel of Time, and Earthsea), the hope is that this system will help me dive right into a new series with little to no mourning period!
+
+I will outline what a recommender does and the inner workings then get into a bit of code and some recommendations. Also check out [this](https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada) article if you're feeling extra ambitious!
+
+# Recommender systems
+
+## Collaborative Filtering
+
+## Content Based Filtering
+
+# LightFM
 
 
 ```python
@@ -283,3 +294,6 @@ rec.recommend_random(seed = 1001, model = model)
     1. Maybe start with retraining the entire model.
     2. Then move on to batch updating or something like that
 4. finally deployment, docker, AWS, etc.
+
+
+_Thanks to [Radu Marcusu](https://unsplash.com/photos/mbKApJz6RSU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) for the header photo!_
