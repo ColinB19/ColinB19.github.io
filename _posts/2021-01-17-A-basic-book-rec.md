@@ -1,14 +1,15 @@
 ---
 title: A Simple Book Recommender with LightFM
-date: 2021-01-17 12:00:00 +/-0800
+date: 2021-01-16 12:00:00 +/-0800
 categories: [Data Science, Book Recommender]
 tags: [jupyter, machine learning, pandas, gradient descent]     # TAG names should always be lowercase
-#image: /assets/img/posts/basic-book-rec/header.jpg # from https://unsplash.com/photos/mcSDtbWXUZU
+image: /assets/img/posts/basic-book-rec/header.jpg # from https://unsplash.com/photos/mcSDtbWXUZU
 math: true
 ---
 
 # Import and class definitions
 Thanks to [Radu Marcusu](https://unsplash.com/photos/mbKApJz6RSU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) for the header photo!
+
 
 ```python
 #standard stuff
@@ -240,149 +241,37 @@ model = rec.get_model(num_threads = 12)
 rec.recommend_random(seed = 1001, model = model)
 ```
 
-    [1mUser 3898 known items: [0m
+**User 3898 known items:**
 
 
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>title</th>
-      <th>authors</th>
-      <th>rating</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>44</th>
-      <td>The Green Mile</td>
-      <td>Stephen King</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>70</th>
-      <td>Room</td>
-      <td>Emma Donoghue</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>100</th>
-      <td>Eligible: A Modern Retelling of Pride and Prejudice (The Austen Project, #4)</td>
-      <td>Curtis Sittenfeld</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>99</th>
-      <td>A Little Life</td>
-      <td>Hanya Yanagihara</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>91</th>
-      <td>Homegoing</td>
-      <td>Yaa Gyasi</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>All the Light We Cannot See</td>
-      <td>Anthony Doerr</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>Case Histories (Jackson Brodie #1)</td>
-      <td>Kate Atkinson</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td>Rebecca</td>
-      <td>Daphne du Maurier, Sally Beauman</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Beautiful Ruins</td>
-      <td>Jess Walter</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td>March: Book One (March, #1)</td>
-      <td>John             Lewis, Andrew Aydin, Nate Powell</td>
-      <td>5</td>
-    </tr>
-  </tbody>
-</table>
+| title                           | authors                             | rating |
+|:--------------------------------|:------------------------------------|-------:|
+| The Green Mile                  | Stephen King                        | 5      |
+| Room                            | Emma Donoghue                       | 5      |
+| Eligible: A Modern Retelling... | Giovanni Rovelli                    | 5      |
+| A Little Life                   | Hanya Yanagihara                    | 5      |
+| Homegoing                       | Yaa Gyasi                           | 5      |
+| All the Light We Cannot See     | Anthony Doerr                       | 5      |
+| Case Histories (Jackson...      | Kate Atkinson                       | 5      |
+| Rebecca                         | Daphne du Maurier, Sally Beauman    | 5      |
+| Beautiful Ruins                 | Jess Walter                         | 5      |
+| March: Book One (March, #1)     |John Lewis, Andrew Aydin, Nate Powell| 5      |
 
 
-    [1mTop 10 suggested items:[0m
+**Top 10 suggested items:**
 
-
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>title</th>
-      <th>authors</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>60</th>
-      <td>The Girl on the Train</td>
-      <td>Paula Hawkins</td>
-    </tr>
-    <tr>
-      <th>142</th>
-      <td>All the Light We Cannot See</td>
-      <td>Anthony Doerr</td>
-    </tr>
-    <tr>
-      <th>145</th>
-      <td>The Goldfinch</td>
-      <td>Donna Tartt</td>
-    </tr>
-    <tr>
-      <th>457</th>
-      <td>Station Eleven</td>
-      <td>Emily St. John Mandel</td>
-    </tr>
-    <tr>
-      <th>532</th>
-      <td>Go Set a Watchman</td>
-      <td>Harper Lee</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Gone Girl</td>
-      <td>Gillian Flynn</td>
-    </tr>
-    <tr>
-      <th>667</th>
-      <td>Everything I Never Told You</td>
-      <td>Celeste Ng</td>
-    </tr>
-    <tr>
-      <th>1219</th>
-      <td>Fates and Furies</td>
-      <td>Lauren Groff</td>
-    </tr>
-    <tr>
-      <th>550</th>
-      <td>Life After Life</td>
-      <td>Kate Atkinson</td>
-    </tr>
-    <tr>
-      <th>1186</th>
-      <td>My Brilliant Friend (The Neapolitan Novels #1)</td>
-      <td>Elena Ferrante, Ann Goldstein</td>
-    </tr>
-  </tbody>
-</table>
+| title                                 | authors                       |
+|:--------------------------------------|------------------------------:|
+| The Girl on the Train                 | Paula Hawkins                 |
+| All the Light We Cannot See           | Anthony Doerr                 |
+| The Goldfinch                         | Donna Tartt                   |
+| Station Eleven                        | Emily St. John Mandel         |
+| Go Set a Watchman                     | Harper Lee                    |
+| Gone Girl                             | Gillian Flynn                 |
+| Everything I Never Told You           | Celeste Ng                    |
+| Fates and Furies                      | Lauren Groff                  |
+| Life After Life                       | Kate Atkinson                 |
+| My Brilliant Friend (The Neapolitan...| Elena Ferrante, Ann Goldstein |
 
 
 ## Some notes for moving forward.
@@ -394,8 +283,3 @@ rec.recommend_random(seed = 1001, model = model)
     1. Maybe start with retraining the entire model.
     2. Then move on to batch updating or something like that
 4. finally deployment, docker, AWS, etc.
-
-
-```python
-
-```
