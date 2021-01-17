@@ -16,21 +16,8 @@ I love books. They provide an escape from reality which, if we're honest, we all
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-%matplotlib inline
 
-label_kwargs = {'fontfamily': 'sans-serif',
-                'fontsize': 15}
-
-title_kwargs = {'fontfamily': 'sans-serif',
-                'fontsize': 25,
-                'fontweight': 'bold'}
-
-tick_kwargs = {'rotation' : 'vertical'}
-```
-
-
-```python
-# let's just read in all of the data that we'll need
+# This just reads in the data
 books = pd.read_csv("goodbooks-10k/books.csv")
 book_tags = pd.read_csv("goodbooks-10k/book_tags.csv")
 ratings = pd.read_csv("goodbooks-10k/ratings.csv")
@@ -44,186 +31,15 @@ to_read = pd.read_csv("goodbooks-10k/to_read.csv")
 books.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>book_id</th>
-      <th>goodreads_book_id</th>
-      <th>best_book_id</th>
-      <th>work_id</th>
-      <th>books_count</th>
-      <th>isbn</th>
-      <th>isbn13</th>
-      <th>authors</th>
-      <th>original_publication_year</th>
-      <th>original_title</th>
-      <th>...</th>
-      <th>ratings_count</th>
-      <th>work_ratings_count</th>
-      <th>work_text_reviews_count</th>
-      <th>ratings_1</th>
-      <th>ratings_2</th>
-      <th>ratings_3</th>
-      <th>ratings_4</th>
-      <th>ratings_5</th>
-      <th>image_url</th>
-      <th>small_image_url</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>2767052</td>
-      <td>2767052</td>
-      <td>2792775</td>
-      <td>272</td>
-      <td>439023483</td>
-      <td>9.780439e+12</td>
-      <td>Suzanne Collins</td>
-      <td>2008.0</td>
-      <td>The Hunger Games</td>
-      <td>...</td>
-      <td>4780653</td>
-      <td>4942365</td>
-      <td>155254</td>
-      <td>66715</td>
-      <td>127936</td>
-      <td>560092</td>
-      <td>1481305</td>
-      <td>2706317</td>
-      <td>https://images.gr-assets.com/books/1447303603m...</td>
-      <td>https://images.gr-assets.com/books/1447303603s...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>3</td>
-      <td>3</td>
-      <td>4640799</td>
-      <td>491</td>
-      <td>439554934</td>
-      <td>9.780440e+12</td>
-      <td>J.K. Rowling, Mary GrandPré</td>
-      <td>1997.0</td>
-      <td>Harry Potter and the Philosopher's Stone</td>
-      <td>...</td>
-      <td>4602479</td>
-      <td>4800065</td>
-      <td>75867</td>
-      <td>75504</td>
-      <td>101676</td>
-      <td>455024</td>
-      <td>1156318</td>
-      <td>3011543</td>
-      <td>https://images.gr-assets.com/books/1474154022m...</td>
-      <td>https://images.gr-assets.com/books/1474154022s...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>41865</td>
-      <td>41865</td>
-      <td>3212258</td>
-      <td>226</td>
-      <td>316015849</td>
-      <td>9.780316e+12</td>
-      <td>Stephenie Meyer</td>
-      <td>2005.0</td>
-      <td>Twilight</td>
-      <td>...</td>
-      <td>3866839</td>
-      <td>3916824</td>
-      <td>95009</td>
-      <td>456191</td>
-      <td>436802</td>
-      <td>793319</td>
-      <td>875073</td>
-      <td>1355439</td>
-      <td>https://images.gr-assets.com/books/1361039443m...</td>
-      <td>https://images.gr-assets.com/books/1361039443s...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>2657</td>
-      <td>2657</td>
-      <td>3275794</td>
-      <td>487</td>
-      <td>61120081</td>
-      <td>9.780061e+12</td>
-      <td>Harper Lee</td>
-      <td>1960.0</td>
-      <td>To Kill a Mockingbird</td>
-      <td>...</td>
-      <td>3198671</td>
-      <td>3340896</td>
-      <td>72586</td>
-      <td>60427</td>
-      <td>117415</td>
-      <td>446835</td>
-      <td>1001952</td>
-      <td>1714267</td>
-      <td>https://images.gr-assets.com/books/1361975680m...</td>
-      <td>https://images.gr-assets.com/books/1361975680s...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>4671</td>
-      <td>4671</td>
-      <td>245494</td>
-      <td>1356</td>
-      <td>743273567</td>
-      <td>9.780743e+12</td>
-      <td>F. Scott Fitzgerald</td>
-      <td>1925.0</td>
-      <td>The Great Gatsby</td>
-      <td>...</td>
-      <td>2683664</td>
-      <td>2773745</td>
-      <td>51992</td>
-      <td>86236</td>
-      <td>197621</td>
-      <td>606158</td>
-      <td>936012</td>
-      <td>947718</td>
-      <td>https://images.gr-assets.com/books/1490528560m...</td>
-      <td>https://images.gr-assets.com/books/1490528560s...</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 23 columns</p>
-</div>
-
-
+<!-- | book_id | goodreads_book_id | best_book_id | work_id | books_count | isbn | isbn13 | authors | original_publication_year | original_title | ... | ratings_count | work_ratings_count | work_text_reviews_count | ratings_1 | ratings_2 | ratings_3 | ratings_4 | ratings_5 | image_url | small_image_url |
+|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|---:|
+| 1 | 2767052 | 2767052 | 2792775 | 272 | 439023483 | 9.780439e+12 | Suzanne Collins | 2008.0 | The Hunger Games | ... | 4780653 | 4942365 | 155254 | 66715 | 127936 | 560092 | 1481305 | 2706317 |  https://images.gr-assets.com/books/1447303603m...  |  https://images.gr-assets.com/books/1447303603s...  | -->
 
 
 ```python
 #this just tells me which id this data goes by (book_id, goodreads, or best_book)
 ratings.sort_values('book_id').head()
 ```
-
-
-
 
 <div>
 <style scoped>
