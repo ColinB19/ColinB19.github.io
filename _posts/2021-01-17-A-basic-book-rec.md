@@ -10,7 +10,7 @@ math: true
 --------------------
 Recommender systems are in use in many contemporary web service settings. The canonical example of a recommender system is employed by Netflix when trying to recommend what any particular user may want to watch. However, this technology can also be seen at Amazon, Youtube and LinkedIn. Companies leverage recommender systems to provide customers with the best experience possible (a pleasant side effect is the maximization of profits).
 
-Since these systems are so prevalent in modern sales, I decided I would build one! Since reading is one of my favorite hobbies, I decided to build a system that could recommend new books to me. I always feel a sense of emptiness after finishing a series (some of my favorites include *Harry Potter*, *Wheel of Time*, and *Earthsea*), the hope is that this system will help me dive right into a new series with little to no mourning period!
+Since these systems are so prevalent in modern sales, I decided I would build one! Reading is one of my favorite hobbies. With this in mind, I figured a useful first from-scratch project would be to build a system that could recommend new books to me. I always feel a sense of emptiness after finishing a series (some of my favorites include *Harry Potter*, *Wheel of Time*, and *Earthsea*), the hope is that this system will help me dive right into a new series with little to no mourning period!
 
 I will outline what a recommender does and the inner workings then get into a bit of code and some recommendations. Also check out [this](https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada) article if you're feeling extra ambitious!
 
@@ -83,7 +83,7 @@ For now, I will just discuss the system that I am concerned with: the collaborat
 
 Collaborative based recommender systems are systems that seek to recommend items to users based off of other users past interactions with the items in the system. A memory based collaborative filter assumes no underlying model of the data (which is stored in a user-item interaction matrix) and finds new items based off of similar users or similar items. This can be done with a [nearest neighbors]({% post_url 2020-10-15-KNN-from-scratch %}) algorithm. There are two types of memory based systems: user-user and item-item.
 
-The user-user approach users the rows (users) from the user-interaction matrix and treats them as vectors in the space of all possible items. A nearest neighbors search is done with the new user on each user vector, and recommendations are made based off of similar users.
+The user-user approach uses the rows (users) from the user-interaction matrix and treats them as vectors in the space of all possible items. A nearest neighbors search is done with the new user on each user vector, and recommendations are made based off of similar users.
 
 The item-item approach is very similar to that of the user-user approach. This method uses the columns of the user-item interaction matrix as vectors in the space of all possible users. For the most positive items the new user previously rated, the item vectors can be compared with other item vectors in the matrix via a nearest neighbors search. The most similar items are then recommended. The downfall to the memory based approach is that it does not scale well with the age of the system. If you have millions of users and items, the nearest neighbors algorithm will slow significantly (on the order of $O(kmn)$ where $k$ is the number of neighbors considered and $m\times n$ is the user-item matrix dimensionality).
 
@@ -108,6 +108,7 @@ Let's import this package and see what we can do. We will also need to import a 
 from scipy.sparse import coo_matrix as cm
 import lightfm as lf
 
+# this is because I re-indexed all users and books to start from zero
 numUsers = ratings.user_id.max()+1
 numBooks = ratings.book_id.max()+1
 
@@ -121,6 +122,7 @@ Now that we have our sparse matrix we can go ahead and perform our factorization
 
 ```python
 model = lf.LightFM(loss = 'warp')
+# I have a Threadripper 2920X so I want to use quite a few threads.
 model.fit(ratSparse, epochs = 30, num_threads = 12)
 ```
 
@@ -204,4 +206,4 @@ Great! This looks like it works in the way we would expect. Of course, I need to
 - Finally deployment, docker, AWS, etc.
 
 
-_Thanks to [Radu Marcusu](https://unsplash.com/photos/mbKApJz6RSU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) for the header photo. Also, make sure to check out my [Github repo](https://github.com/ColinB19/BookRecommender) as I go through this project._
+_Thanks to [Radu Marcusu](https://unsplash.com/photos/mbKApJz6RSU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) for the header photo. Also, make sure to check out my [Github repo](https://github.com/ColinB19/BookRecommender) as I go through this project. As always please email me with any questions or comments you may have._
