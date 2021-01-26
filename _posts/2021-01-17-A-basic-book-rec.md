@@ -75,7 +75,10 @@ Well, we got rid of the repeating entries issue. Hurrah! Alas, this does not rea
 # Something much better
 -----------------------
 
-For now, I will just discuss the system that I am concerned with: the collaborative based filtering method. There are other methods (such as content based and hybrid methods); however, I will be using a collaborative system for the first iteration of this project so that is what I will discuss here.
+There are two broad categories of modern recommender systems:
+
+1. **Content-based** filtering techniques involve trying to match users with other users and items that have similar meta data. Each user will have demographic data (race, age, gender, location, etc.) and each item will have tags (color, genre, medium, etc.). Then a system can suggest new items for users based on meta data, rather than using any specific item interactions and without relying on other users explicitly. For example, Amazon could recommend backpacks and notebooks to me since I am a college student.
+2.  **Collaborative** filtering techniques rely on a database of user-item interactions to suggest new items to users. Model agnostic techniques rely on classification algorithms to search for the user-item nearest to the user-item in question. Model based methods attempt to approximate an underlying framework on user-item interactions. Simple implementations of this methodology use nearest neighbor algorithms to find similar items. More complicated implementations use Singular Value Decomposition to find low dimensional representations of the user-item interactions. This is the filtering method I will discuss in the next section.
 
 <!-- In this section I will discuss the two (three if you count hybrid methods) paradigms of recommender systems: collaborative based filtering and content based filtering. I will discuss basic algorithms and ideas that fall under these umbrellas. Let's first look at content based filtering. -->
 
