@@ -10,7 +10,7 @@ math: true
 ----------------------------
 I'm back! After quite a long haiatus from posting I'm back with a vengeance. What's the deal? Well, what's the first thing to go when the stack of stuff to do gets too high to manage? Apparently, for me, it's writing. I have been working very hard on applying to new career opportunities, reading every book I can get my hands on, and writing code that I have put one of the key aspects of data science on the backburner: communication. Even my [Twitter](https://twitter.com/data_motivated) has suffered from this lull. 
 
-Despite this temporary leave of absence I am still as committed as ever to showing off my journey into data science! I'll be psoting more frequently from here on out.
+Despite this temporary leave of absence I am still as committed as ever to showing off my journey into data science! I'll be posting more frequently from here on out.
 
 # The Book Spot
 -------------------
