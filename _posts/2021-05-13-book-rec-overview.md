@@ -65,7 +65,7 @@ Also be sure to check out this [post](https://towardsdatascience.com/recommender
 ## Creating a Flask App
 The next challenge was creating an application for users to interact with. Since this is a very public-friendly project, I opted to create a full website instead of a simple API. In order to do this I leaned heavily on [Corey Schafer's Youtube series on Flask](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH). I can't recommend these tutorials enough, Corey rocks!
 
-This is the portion of the project that took me the longest and I learned the most. 
+This is the portion of the project that took me the longest and where I learned the most. 
 
 - First I learned basic Flask routes and some HTML to get an initial site running. Flask routes are essentially triggered by a user visiting certain pages of your site. So if a user navigates to `yoursite.com/home` then your flask app will run some code then possible render some html for you. An example:
 
