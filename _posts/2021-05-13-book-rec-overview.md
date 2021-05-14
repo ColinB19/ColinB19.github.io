@@ -63,7 +63,7 @@ where $B$ is an $m \times q$ matrix  of $q$ latent features describing all users
 Also be sure to check out this [post](https://towardsdatascience.com/recommender-systems-matrix-factorization-using-pytorch-bd52f46aa199) on medium for a deep dive into matrix factorization! It's good stuff.
 
 ## Creating a Flask App
-The next challenge was creating an application for users to interact with. Since this is a very public-friendly project, I opted to create a full website instead of a simple API. In order to do this I leaned heavily on [Corey Schaffer's Youtube series on Flask](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH). I can't recommend these tutorials enough, Corey rocks!
+The next challenge was creating an application for users to interact with. Since this is a very public-friendly project, I opted to create a full website instead of a simple API. In order to do this I leaned heavily on [Corey Schafer's Youtube series on Flask](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH). I can't recommend these tutorials enough, Corey rocks!
 
 This is the portion of the project that took me the longest and I learned the most. 
 
