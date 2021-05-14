@@ -19,7 +19,7 @@ Despite this temporary leave of absence I am still as committed as ever to talki
 _Thanks to [Glen Noble](https://unsplash.com/photos/o4-YyGi5JBc) for this image._
 <br>
 
-I wanted to discuss my book recommender project as it has been finished(ish) and I learned A TON while doing it. This post will be the first of several where I dive into the different aspects of the project. Here I will just talk about the general overview of the project, a brief description of its parts, and some general concepts I learned or would do differently. The subsequent posts in this series will dive deeper into the aforementioned parts. 
+I wanted to discuss my book recommender project as it has been finished(ish) and I learned A TON while doing it (the [finished product](https://thebookspot.herokuapp.com/). This post will be the first of several where I dive into the different aspects of the project. Here I will just talk about the general overview of the project, a brief description of its parts, and some general concepts I learned or would do differently. The subsequent posts in this series will dive deeper into the aforementioned parts. 
 
 ## Heroku, thou art a cruel and angry god
 Back in January, I posted a story on my first [basic book recommender]({% post_url 2021-01-17-A-basic-book-rec %}) outlining a matrix factorization algorithm I wrote using [LightFM](https://making.lyst.com/lightfm/docs/home.html). This package worked really well and I was very pleased. After completion of this model I wanted to deploy the model to an app for people to log into and get some periodic recommendations. I decided on a Heroku server for this job as it had a free tier and was fairly simple to get going. All I needed was:
@@ -98,6 +98,7 @@ I finally needed a place to retrain my model daily. Since I didn't want to leave
 In the future I would like to spend some more time on model training. The recommendations given are alright, but not exactly what I expect. For example, I am a huge fan of *The Wheel of Time* by Robert Jordan and have rated all of those books on my account. I expect the algorithm to recommend some other fantasy authors like Brandon Sanderson and Steven Erikson; however, I tend to get more obscure recommendations. I suspect getting the MSE below 1 will likely help with this issue.
 
 Be on the look out for more blog posts where I dive into the data, the model training, and the flask app and possible shorter blog posts on setting up Heroku and AWS! I'm also starting a new project on analyzing some data from the MLB. Be on the lookout for that! As always you can find me on [LinkedIn](https://www.linkedin.com/in/colin-bradley-data-motivated/) and [Twitter](https://twitter.com/home).
+
 
 <br>
 _Thanks to [Marten Newhall](https://unsplash.com/photos/uAFjFsMS3YY) for the header photo. Also, make sure to check out my [Github repo](https://github.com/ColinB19/BookRecommender) to look at my code for this and other projects. As always please email me with any questions or comments you may have._
