@@ -95,7 +95,7 @@ I finally needed a place to retrain my model daily. Since I didn't want to leave
 
 # Moving Forward
 ----------------
-In the future I would like to spend some more time on model training. The recommendations given are alright but not exactly what I expect. For example, I am a huge fan of *The Wheel of Time* by Robert Jordan and have rated all of those books on my account. I expect the algorithm to recommend some other fantasy authors like Brandon Sanderson and Steven Erikson; however, I tend to get more obscure recommendations. I suspect getting the MSE below 1 will likely help with this issue.
+In the future I would like to spend some more time on model training. The recommendations given are alright, but not exactly what I expect. For example, I am a huge fan of *The Wheel of Time* by Robert Jordan and have rated all of those books on my account. I expect the algorithm to recommend some other fantasy authors like Brandon Sanderson and Steven Erikson; however, I tend to get more obscure recommendations. I suspect getting the MSE below 1 will likely help with this issue.
 
 Be on the look out for more blog posts where I dive into the data, the model training, and the flask app and possible shorter blog posts on setting up Heroku and AWS! I'm also starting a new project on analyzing some data from the MLB. Be on the lookout for that! As always you can find me on [LinkedIn](https://www.linkedin.com/in/colin-bradley-data-motivated/) and [Twitter](https://twitter.com/home).
 
