@@ -77,7 +77,7 @@ def index():
 ```
 This will load the variable mult with 4 then render the `index.html` template in your templates folder. This is the foundation of flask.
 
-- I then put together various pages and routes. I am most proud of my search engine which queries a database I host on AWS (which I talk about in the next section). I'd like to get a search engine that can handle typos in the future... one step at a time! For this step I needed to learn SQLAlchemy, a package that allows python to interface with a SQL database. 
+- I then put together various pages and routes. I am most proud of my search engine which queries a database I host on AWS (which I talk about in the next section). I'd like to get a search engine that can handle typos in the future, but let's just handle one step at a time. For this step I needed to learn SQLAlchemy, a package that allows python to interface with a SQL database. 
 
 - I then had to learn about forms, models, registration and logging in of users with password encryption, environment variables and more! Most of this can be found in Corey's series (I seriously cannot recommend this enough). 
 
@@ -91,7 +91,7 @@ I finally had my app, app host and model in a state I was comfortbale with; howe
 Amazon Web Services: Relational Database Server is a service that allows you to host a number of different types of databases (which can be free depending on how long you've been a member and how much data you're storing/moving around). I chose PostgreSQL since it's the database I see the most often on job postings. I spent some time learning PostgreSQL, SQL, and RDS; however, once you figure out the pricing scheme for AWS the process is pretty easy. 
 
 ### AWS EC2
-I finally needed a place to retrain my model daily. Since I didn't want to leave my computer on my Linux partition 24/7, I decided cloud computing was the way to go. I messed with AWS Lambda for a while, but realized my code base was too large to hsot there. I decided to purchase a small EC2 instance and deploy my model there (I realized after the fact that this defeats the purpose of me creating my own algorithm to get a small Heroku slug size, oh well!). EC2 is slightly more complex to setup than RDS. I'll be going over both of these in detail in a future post.
+I finally needed a place to retrain my model daily. Since I didn't want to leave my computer on my Linux partition 24/7, I decided cloud computing was the way to go. I messed with AWS Lambda for a while, but realized my code base was too large to host there. I decided to purchase a small EC2 instance and deploy my model there (I realized after the fact that this defeats the purpose of me creating my own algorithm to get a small Heroku slug size, oh well!). EC2 is slightly more complex to setup than RDS. I'll be going over both of these in detail in a future post.
 
 # Moving Forward
 ----------------
