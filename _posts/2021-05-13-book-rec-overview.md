@@ -32,7 +32,7 @@ Back in January, I posted a story on my first [basic book recommender]({% post_u
 This all seems very easy; however, I ran into a significant problem. The free version of Heroku only allows you a certain amount of storage space devoted to the slug (basically all the packages you're installing). As it turns out, LightFM required a fairly large slug. Thus, I needed a new recommendation engine. So I built one!
 
 ## Building my own recommender
-I needed to build a recommender that didn't rely on too many external libraries. This resulted in me writing up my own *gradient descent* (SGD) function. The format in its most basic elements is as follows:
+I needed to build a recommender that didn't rely on too many external libraries. This resulted in me writing up my own *gradient descent* (GD) function. The format in its most basic elements is as follows:
 
 ```python
 # gradient of mean square error
@@ -58,7 +58,7 @@ def grad_descent(utility_matrix, user_features, item_features, lmbda, epochs, le
 
 Essentially, the goal of matrix factorization is to take your user-item interaction matrix $A$ (a large $ m \times n$ matrix where $n$ is the number of users and $m$ is the number of books) and decompose it into two latent-feature matrices
 \$$ A = B\;C^{\text{T}}, \$$
-where $B$ is an $m \times q$ matrix  of $q$ latent features describing all users and $C$ is a $n \times q$ matrix of $q$ latent features describing all items. Matrices $B$ and $C$ are found iteratively through SGD. If you want to learn more about this process you can check out my earlier post, [A Simple Book Recommender with LightFM]({% post_url 2021-01-17-A-basic-book-rec %}). Or you can hold out for a future post diving further into the code for this project!
+where $B$ is an $m \times q$ matrix  of $q$ latent features describing all users and $C$ is a $n \times q$ matrix of $q$ latent features describing all items. Matrices $B$ and $C$ are found iteratively through GD. If you want to learn more about this process you can check out my earlier post, [A Simple Book Recommender with LightFM]({% post_url 2021-01-17-A-basic-book-rec %}). Or you can hold out for a future post diving further into the code for this project!
 
 Also be sure to check out this [post](https://towardsdatascience.com/recommender-systems-matrix-factorization-using-pytorch-bd52f46aa199) on medium for a deep dive into matrix factorization! It's good stuff.
 
