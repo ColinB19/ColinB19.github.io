@@ -16,13 +16,13 @@ Despite this temporary leave of absence I am still as committed as ever to talki
 -------------------
 
 ![jpg]({{"/assets/img/posts/book-rec/midpost1.jpg" | absolute_url}})
-_Thanks to [Glen Noble](https://unsplash.com/photos/o4-YyGi5JBc)._
+_Thanks to [Glen Noble](https://unsplash.com/photos/o4-YyGi5JBc) for this image._
 <br>
 
 I wanted to discuss my book recommender project as it has been finished(ish) and I learned A TON while doing it. This post will be the first of several where I dive into the different aspects of the project. Here I will just talk about the general overview of the project, a brief description of its parts, and some general concepts I learned or would do differently. The subsequent posts in this series will dive deeper into the aforementioned parts. 
 
 ## Heroku, thou art a cruel and angry god
-Back in January, I posted a story on my first [basic book recommender]({% post_url 2021-01-17-A-basic-book-rec %}) outlining a matrix factorization algorithm I wrote using the [LightFM](https://making.lyst.com/lightfm/docs/home.html). This package worked really well and I was very pleased. After completion of this model I wanted to deploy the model to an app for people to log into and get some periodic recommendations. I decided on a Heroku server for this job as it had a free tier and was fairly simple to get going. All I needed was:
+Back in January, I posted a story on my first [basic book recommender]({% post_url 2021-01-17-A-basic-book-rec %}) outlining a matrix factorization algorithm I wrote using [LightFM](https://making.lyst.com/lightfm/docs/home.html). This package worked really well and I was very pleased. After completion of this model I wanted to deploy the model to an app for people to log into and get some periodic recommendations. I decided on a Heroku server for this job as it had a free tier and was fairly simple to get going. All I needed was:
 
 1. An application ran through Flask (which I will discuss later).
 2. A model training file to compute new recommendations.
