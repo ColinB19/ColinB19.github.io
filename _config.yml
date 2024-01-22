@@ -6,12 +6,16 @@ description: A Data Science Portfolio and Blog
 
 # User settings
 username: Colin Bradley
-user_description: Hi there! I am a Data Scientist striving to answer hard questions with data. 
+user_description: Welcome to my website! Here I will discuss my journey through data science,
+  physics concepts I find interesting, and anything else I think
+  people would enjoy reading.
 user_title: Data Scientist
 email: c.bradley.do@gmail.com
-linkedin_username: colin-bradley-data-motivated
-github_username:  colinb19
-# gplus_username:  lorem_ipsum
+linkedin: 
+  username: colin-bradley-data-motivated
+github:
+  username: ColinB19             # change to your github username
+
 
 # Google-analytics
 google-analytics:
