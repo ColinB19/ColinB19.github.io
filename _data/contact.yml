@@ -6,21 +6,14 @@
 
 -
   type: github
-  icon: 'fab fa-github-alt'
--
-  type: twitter
-  icon: 'fab fa-twitter'
+  icon: 'icon fa fa-github-alt'
 -
   type: linkedin
-  icon: 'fab fa-linkedin'
+  icon: 'icon fa fa-linkedin'
 -
   type: email
-  icon: 'fas fa-envelope'
+  icon: 'icon fa fa-envelope'
   noblank: true            # open link in current tab
--
-  type: rss
-  icon: 'fas fa-rss'
-  noblank: true
 
 # Uncomment and complete the url below to enable more contact options
 # -
