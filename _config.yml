@@ -16,6 +16,17 @@ linkedin:
 github:
   username: ColinB19             # change to your github username
 
+social:
+  name: Colin Bradley                 # it will shows as the copyright owner in Footer
+  email: c.bradley.do@gmail.com            # change to your email address
+  links:
+    # The first element serves as the copyright owner's link
+    - https://www.linkedin.com/in/colin-bradley-data-motivated
+    - https://twitter.com/data_motivated    # change to your twitter homepage
+    - https://github.com/ColinB19      # change to your github homepage
+    # Uncomment below to add more social links
+    # - https://www.facebook.com/username
+
 
 # Google-analytics
 google-analytics:

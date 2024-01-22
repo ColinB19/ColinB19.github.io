@@ -5,9 +5,31 @@
         <span class="site-description">{{site.user_title}}</span>
       </h1>
       <div class="header-icons">
-        <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My LinkedIn" target="_blank" href="#"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github.username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <!-- <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My LinkedIn" target="_blank" href="https://linkedin.com/{{ site.linkedin.username }}"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github.username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a> -->
+        {% for entry in site.data.contact %}
+          {% capture url %}
+            {%- if entry.type == 'github' -%}
+              https://github.com/{{ site.github.username }}
+            {%- elsif entry.type == 'linkedin' -%}
+              https://linkedin.com/{{ site.linkedin.username }}
+            {%- elsif entry.type == 'email' -%}
+              {% assign email = site.social.email | split: '@' %}
+              javascript:window.open('mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@'))
+            {%- elsif entry.type == 'rss' -%}
+              {{ "/feed.xml" | relative_url }}
+            {%- else -%}
+              {{ entry.url }}
+            {%- endif -%}
+          {% endcapture %}
+
+          {% if url != '' %}
+          <a href="{{ url }}" {% unless entry.noblank %}target="_blank"{% endunless %}>
+            <i class="{{ entry.icon }}"></i>
+          </a>
+          {% endif %}
+        {% endfor %}
       </div>
       <div class="header-links">
         <a class="link" href="#about" data-scroll>About Me</a>
