@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/setup-ruby@v1
+      - uses: actions/setup-ruby
         with:
           ruby-version: '2.6'
 
@@ -58,9 +58,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/setup-ruby@v1
+      - uses: actions/setup-ruby
         with:
-          ruby-version: '2.6.x'
+          ruby-version: '2.6'
 
       - name: Checkout
         uses: actions/checkout@v2
