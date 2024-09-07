@@ -1,20 +1,4 @@
-# hidden files
-.*
-
-# python compiled files
-*.pyc
-
-# jekyll debug
 _site
-
-# Jeykll Gemfile.lock
-Gemfile.lock
-
-# yui-compressor
-*.jar
-
-# bundle cache
-vendor
-
-# posts not ready
-unfinished_posts/*
+.sass-cache
+node_modules
+.DS_STORE

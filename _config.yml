@@ -1,38 +1,17 @@
 # Site settings
-title: Data Motivated
-description: A Data Science Portfolio and Blog
+title: A blog about lorem ipsum dolor sit amet
+description: A blog about lorem ipsum dolor sit amet
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Colin Bradley
-user_description: "Welcome to my website! I am super excited to share anything and everything I find interesting with the world. 
-On this site I'll list some fun portfolio projects on everything from NFL analytics to book recommender systems and everything in between. 
-I'll also write some blog posts on Machine Learning, Statistics, Math and Physics! So have a poke around and please feel free to email me with
-questions, comments, or if you just want to chat about these topics that I'm so passtionate about. "
-my_expertise: "I'm a data enthusiast with a passion for diving into machine learning and analytics. Over the years, 
-I've built and fine-tuned models, created data pipelines, and turned raw data into meaningful insights. 
-I love working with Python, SQL, and cloud services like AWS and Azure. Whether it's wrangling data, optimizing models, 
-or crafting visualizations, I'm constantly learning new tools and techniques to solve complex problems. 
-The excitement of discovery and continuous learning keeps me motivated every day!"
-user_title: Data Scientist
-email: c.bradley.do@gmail.com
-linkedin: 
-  username: colin-bradley-data-motivated
-github:
-  username: ColinB19             # change to your github username
-
-social:
-  name: Colin Bradley                 # it will shows as the copyright owner in Footer
-  email: c.bradley.do@gmail.com            # change to your email address
-  links:
-    # The first element serves as the copyright owner's link
-    - https://www.linkedin.com/in/colin-bradley-data-motivated
-    - https://twitter.com/data_motivated    # change to your twitter homepage
-    - https://github.com/ColinB19      # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-
+username: Anon Developer
+user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
+user_title: Software Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
 
 # Google-analytics
 google-analytics:
