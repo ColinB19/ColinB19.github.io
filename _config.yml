@@ -6,15 +6,17 @@ description: A Data Science Portfolio and Blog
 
 # User settings
 username: Colin Bradley
-user_description: "Welcome to my website! I am super excited to share anything and everything I find interesting with the world. 
-On this site I'll list some fun portfolio projects on everything from NFL analytics to book recommender systems and everything in between. 
-I'll also write some blog posts on Machine Learning, Statistics, Math and Physics! So have a poke around and please feel free to email me with
-questions, comments, or if you just want to chat about these topics that I'm so passtionate about. "
-my_expertise: "I'm a data enthusiast with a passion for diving into machine learning and analytics. Over the years, 
-I've built and fine-tuned models, created data pipelines, and turned raw data into meaningful insights. 
-I love working with Python, SQL, and cloud services like AWS and Azure. Whether it's wrangling data, optimizing models, 
-or crafting visualizations, I'm constantly learning new tools and techniques to solve complex problems. 
-The excitement of discovery and continuous learning keeps me motivated every day!"
+user_description: > 
+  Welcome to my website! I am super excited to share anything and everything I find interesting with the world.
+  On this site I'll list some fun portfolio projects on everything from NFL analytics to book recommender systems and everything in between.
+  I'll also write some blog posts on Machine Learning, Statistics, Math and Physics! So have a poke around and please feel free to email me with
+  questions, comments, or if you just want to chat about these topics that I'm so passtionate about.
+my_expertise: >
+  I'm a data enthusiast with a passion for diving into machine learning and analytics. Over the years, 
+  I've built and fine-tuned models, created data pipelines, and turned raw data into meaningful insights. 
+  I love working with Python, SQL, and cloud services like AWS and Azure. Whether it's wrangling data, optimizing models, 
+  or crafting visualizations, I'm constantly learning new tools and techniques to solve complex problems. 
+  The excitement of discovery and continuous learning keeps me motivated every day!
 user_title: Data Scientist
 email: c.bradley.do@gmail.com
 linkedin: 
