@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.6'
+          ruby-version: '3.3.4'
 
       - name: Checkout
         uses: actions/checkout@v2
@@ -60,7 +60,7 @@ jobs:
     steps:
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.6'
+          ruby-version: '3.3.4'
 
       - name: Checkout
         uses: actions/checkout@v2
