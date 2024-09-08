@@ -1,4 +1,4 @@
-<div class="user-details">
+<!-- <div class="user-details">
   <h1> Blog Posts</h1>
 </div>
 <div id="posts">
@@ -23,4 +23,24 @@
     <a class="project-link" href="{{ post_url 'another-post-date' }}">Check it out</a>
   </div>
 </div>
+</div> -->
+
+<div class="user-details">
+  <h1>Blog Posts</h1>
 </div>
+<div id="posts">
+  <div class="post">
+    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+    <h3>Gradient Descent from Scratch</h3>
+    <p>Have you ever wondered what makes gradient descent tick? Well check out my write-up on how to code it up from scratch in python! You'll learn all the inner details of gradient descent so you can understand your favorite ML frameworks even better!</p>
+    <a class="project-link" href="{{ post_url '2020-09-15-gradient-descent' }}">Check it out</a>
+  </div>
+  <div class="post">
+    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+    <h3>Another Blog Post</h3>
+    <p>Here's another example of a blog post. This description provides some insights into the content of this post.</p>
+    <a class="project-link" href="{{ post_url '2020-09-17-vector-calculus' }}">Check it out</a>
+  </div>
+  <!-- Add more posts here as needed -->
+</div>
+
