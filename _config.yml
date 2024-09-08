@@ -36,4 +36,4 @@ google-analytics:
 
 exclude: ['package.json', 'src' , 'node_modules']
 
-baseurl: ColinB19.github.io # for local testing, or "/repository-name" for GitHub Pages
+# baseurl: ColinB19.github.io # for local testing, or "/repository-name" for GitHub Pages
