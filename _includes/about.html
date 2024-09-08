@@ -1,4 +1,24 @@
- <div class="user-details">
+<style>
+  .user {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the tech divs */
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+
+  .tech {
+    flex: 1; /* Make each div take equal space */
+    margin: 0 10px; /* Add margin between the divs */
+    text-align: center; /* Center-align the content inside the divs */
+  }
+
+  .tech img, .tech i {
+    width: 64px;
+    height: 64px;
+    margin: 0 5px; /* Add some spacing between the icons/images */
+  }
+</style>
+
+<div class="user-details">
   <h1> About Me </h1>
   <p> {{site.user_description}} </p>
 </div>
@@ -8,11 +28,11 @@
       <i class="devicon-tensorflow-original colored"></i>
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"  style="width: 64px; height: 64px;" />
       <i class="devicon-keras-plain colored"></i>
-      <p>Machine Learning is a passion of mine and I have used several<br>machine learning frameworks in both projects and<br>my work experience. These include Tensorflow, Keras,<br>Scikit-Learn, Statsmodels, XGBoost and more!</p>
+      <p>Machine Learning is a passion of mine and I have used several machine learning frameworks in both projects and my work experience. These include Tensorflow, Keras, Scikit-Learn, Statsmodels, XGBoost and more!</p>
     </div>
     <div class="tech">
       <h2>Developer Tools</h2>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"  style="width: 60px; height: 60px;" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"  style="width: 64px; height: 64px;" />
       <i class="devicon-apachespark-original colored"></i>
       <i class="devicon-postgresql-plain colored"></i>
       <p>I have utilized a number of developer tools. Oracle, PostgreSQL, Snowflake, MS SQL Server, Azure, AWS, Databricks...</p>
