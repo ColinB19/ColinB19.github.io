@@ -1,31 +1,59 @@
 #posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     width: 90%;
     max-width: 960px;
     margin: 0 auto;
     
     .post-wrapper {
-      width: 48%;
-      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      text-align: center;
+      background-color: #fff;
       
       .post-image {
         img {
           width: 100%;
           height: auto;
-          border-radius: 5px;
+          display: block;
         }
       }
   
       .post-content {
-        margin-top: 10px;
-        text-align: center;
+        padding: 10px;
+        
         h3 {
           margin-top: 0;
+          font-size: 1.25rem;
         }
+        
         p {
           margin-bottom: 10px;
+          font-size: 1rem;
+        }
+  
+        .project-link {
+          display: inline-block;
+          margin: 10px 0;
+          padding: 5px 10px;
+          color: #1a222c;
+          background-color: transparent;
+          border: 1px solid #1a222c;
+          border-radius: 10px;
+          text-align: center;
+          outline: 0;
+          text-decoration: none;
+          cursor: pointer;
+          transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out;
+  
+          &:hover, &:active {
+            background-color: #54516a;
+            border-color: #54516a;
+            color: #fff;
+            transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in;
+          }
         }
       }
     }
