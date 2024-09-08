@@ -5159,3 +5159,13 @@ body {
   .user-posts p {
     margin-right: 5px;
   }
+
+  .image-center {
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      display: block;
+      margin: 0 auto; /* Center the image */
+    }
+  }
