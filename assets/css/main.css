@@ -5126,46 +5126,40 @@ body {
 }
 
 #posts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns, adjusts to fit */
+    gap: 20px; /* Space between grid items */
     width: 90%;
     max-width: 960px;
     margin: 0 auto;
-  }
-  
-  @media only screen and (min-width: 550px) {
-    #posts {
-      width: 80%;
-    }
-  }
-  
-  .user-posts {
+}
+
+.user-posts {
     margin: 20px auto;
-  }
-  
-  .user-posts img {
+}
+
+.user-posts img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 5px;
-  }
-  
-  .user-posts h5,
-  body {
-    margin: 0;
-  }
-  
-  .user-posts p {
-    margin-right: 5px;
-  }
+}
 
-  .image-center {
+.user-posts h5,
+body {
+    margin: 0;
+}
+
+.user-posts p {
+    margin-right: 5px;
+}
+
+.image-center {
     img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-      display: block;
-      margin: 0 auto; /* Center the image */
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto; /* Center the image */
     }
-  }
+}

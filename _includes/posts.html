@@ -1,29 +1,26 @@
-
 <div class="user-details">
   <h1> Blog Posts</h1>
 </div>
 <div id="posts">
-  <div class="post-wrapper">
-    <div class="post-image">
-      <img alt="Gradient Descent" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
-    </div>
-    <div class="post-content">
-      <h3> Gradient Descent from Scratch </h3>
-      <p>Have you ever wondered what makes gradient descent tick? Well check out my write-up on how to code it up from scratch in python! You'll learn all the inner details of gradient descent so you can understand your favorite ml frameworks even better!</p>
-      <a class="project-link" href="{{ post_url '2020-09-15-gradient-descent' }}">Check it out</a>
-    </div>
+<div class="post-wrapper">
+  <div class="post-image">
+    <img alt="Gradient Descent" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
   </div>
-
-  <!-- Repeat the .post-wrapper block for more posts -->
-  <div class="post-wrapper">
-    <div class="post-image">
-      <img alt="Another Post" src="{{ "/assets/img/another-image.jpg" | prepend: site.baseurl }}" />
-    </div>
-    <div class="post-content">
-      <h3>Vector Calculus Refresher </h3>
-      <p>Some text about vector calc</p>
-      <a class="project-link" href="{{ post_url '2020-09-17-vector-calculus' }}">Check it out</a>
-    </div>
+  <div class="post-content">
+    <h3> Gradient Descent from Scratch </h3>
+    <p>Have you ever wondered what makes gradient descent tick? Well check out my write-up on how to code it up from scratch in python! You'll learn all the inner details of gradient descent so you can understand your favorite ml frameworks even better!</p>
+    <a class="project-link" href="{{ post_url '2020-09-15-gradient-descent' }}">Check it out</a>
   </div>
 </div>
 
+<div class="post-wrapper">
+  <div class="post-image">
+    <img alt="Another Post" src="{{ "/assets/img/another-image.jpg" | prepend: site.baseurl }}" />
+  </div>
+  <div class="post-content">
+    <h3> Another Blog Post </h3>
+    <p>Details about this blog post...</p>
+    <a class="project-link" href="{{ post_url 'another-post-date' }}">Check it out</a>
+  </div>
+</div>
+</div>
