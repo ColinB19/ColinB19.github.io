@@ -1,7 +1,7 @@
 #posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns, adjusts to fit */
+    gap: 20px; /* Space between grid items */
     width: 90%;
     max-width: 960px;
     margin: 0 auto;
@@ -10,8 +10,8 @@
       border: 1px solid #ddd;
       border-radius: 5px;
       overflow: hidden;
-      text-align: center;
       background-color: #fff;
+      text-align: center;
       
       .post-image {
         img {
@@ -58,6 +58,7 @@
       }
     }
   }
+  
   
   
 //   .user-posts {
