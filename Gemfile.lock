@@ -312,6 +312,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-redirect-from
   jekyll-seo-tag
+  nokogiri (~> 1.16.7)
 
 BUNDLED WITH
    2.5.18

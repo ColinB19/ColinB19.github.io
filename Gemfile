@@ -15,3 +15,6 @@ end
 
 # Optional gems
 gem "html-proofer", group: :test
+
+# Explicitly specify nokogiri version if needed
+gem "nokogiri", "~> 1.16.7"  # Adjust the version as needed for compatibility
