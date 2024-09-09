@@ -5011,7 +5011,7 @@ sup {
 
 .user-details {
     text-align: center;
-    margin: 10px auto
+    margin: 30px;
 }
 
 #projects {
@@ -5125,40 +5125,38 @@ body {
     color: #fff
 }
 
-/* Main container for posts */
+/* Grid Layout for Posts */
 #posts {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between grid items */
     width: 90%;
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
   }
   
-  /* Style for each post */
-  .post {
+  /* Styling for each post-wrapper */
+  .post-wrapper {
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: #fff;
+    padding: 10px;
+    text-align: center;
   }
   
-  .post img {
+  .post-image img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    display: block;
   }
   
-  .post h3 {
+  .post-content h3 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
   }
   
-  .post p {
+  .post-content p {
     margin-bottom: 10px;
+    font-size: 1rem;
   }
-  

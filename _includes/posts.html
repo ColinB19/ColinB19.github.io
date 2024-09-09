@@ -1,5 +1,5 @@
 <div class="user-details">
-  <h1>Blog Posts</h1>
+  <h1 class="posts-header">Blog Posts</h1>
 </div>
 
 <section id="posts">
@@ -14,6 +14,7 @@
     </div>
   </div>
 
+  <!-- Add more post-wrapper divs for additional posts -->
   <div class="post-wrapper">
     <div class="post-image">
       <img src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" alt="Mountains"/>
@@ -25,5 +26,25 @@
     </div>
   </div>
 
-  <!-- Add more .post-wrapper divs for additional posts -->
+  <div class="post-wrapper">
+    <div class="post-image">
+      <img src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" alt="Mountains"/>
+    </div>
+    <div class="post-content">
+      <h3>Gradient Descent from Scratch</h3>
+      <p>Have you ever wondered what makes gradient descent tick? Well check out my write-up on how to code it up from scratch in Python! You'll learn all the inner details of gradient descent so you can understand your favorite ML frameworks even better!</p>
+      <a class="project-link" href="{{ site.baseurl }}/2020-09-15-gradient-descent">Check it out</a>
+    </div>
+  </div>
+
+  <div class="post-wrapper">
+    <div class="post-image">
+      <img src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" alt="Mountains"/>
+    </div>
+    <div class="post-content">
+      <h3>Gradient Descent from Scratch</h3>
+      <p>Have you ever wondered what makes gradient descent tick? Well check out my write-up on how to code it up from scratch in Python! You'll learn all the inner details of gradient descent so you can understand your favorite ML frameworks even better!</p>
+      <a class="project-link" href="{{ site.baseurl }}/2020-09-15-gradient-descent">Check it out</a>
+    </div>
+  </div>
 </section>
