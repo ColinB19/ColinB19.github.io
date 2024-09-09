@@ -40,3 +40,5 @@ exclude: ['package.json', 'src' , 'node_modules']
 # sass:
 #   sass_dir: src
 # permalink: /:categories/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
