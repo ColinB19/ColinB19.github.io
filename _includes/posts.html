@@ -11,7 +11,11 @@
     <div class="post-content">
       <h3>{{ post.title }}</h3>
       <p>{{ post.excerpt }}</p>
-      <a class="project-link" href="{{ post.url | prepend: site.baseurl }}">Check it out</a>
+      {{% if post.link %}}
+        <a class="project-link" href="{{ post.link }}">Check it out</a>
+      {% else %}
+        <a class="project-link" href="{{ post.url | prepend: site.baseurl }}">Check it out</a>
+      {% endif %}
     </div>
   </div>
   {% endfor %}

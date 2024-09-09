@@ -5107,23 +5107,6 @@ body {
     transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
 }
 
-.footer {
-    background: #1a222c;
-    padding: 10px 0;
-    margin-top: 100px;
-    text-align: center;
-    color: #fff
-}
-
-.footer .love {
-    color: red
-}
-
-.footer a {
-    text-decoration: none;
-    margin: 0;
-    color: #fff
-}
 
 /* Grid Layout for Posts */
 #posts {
@@ -5227,12 +5210,50 @@ body {
   }
 
 /*footer icons*/
-  .footer-icons {
+.footer {
+    background: #1a222c;
+    padding: 10px 0;
+    margin-top: 100px;
     text-align: center;
-    margin-bottom: 15px;
+    color: #fff
 }
 
-.footer-icons .icon {
+.footer .love {
+    color: red
+}
+
+.footer a {
+    text-decoration: none;
+    margin: 0;
+    color: #fff
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the items */
+    padding: 15px 0;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    text-align: center;
+}
+
+.footer-content .link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-content .link:hover {
+    color: #ddd;
+}
+
+.footer-content .footer-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content .footer-icons .icon {
     height: 20px;
     width: 20px;
     padding: 10px;
@@ -5243,7 +5264,7 @@ body {
     margin: 5px;
 }
 
-.footer-icons .icon:hover {
+.footer-content .footer-icons .icon:hover {
     color: #1a222c;
     background: #fff;
 }
@@ -5251,14 +5272,4 @@ body {
 .footer p {
     text-align: center;
     margin: 5px 0;
-}
-
-.footer a.link {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.footer a.link:hover {
-    color: #ddd;
 }
