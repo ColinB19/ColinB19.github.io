@@ -5,6 +5,7 @@ categories: [Data Science, Book Recommender]
 tags: [machine learning, flask, Postgres]
 image: /assets/img/posts/book-rec/header1.jpg #https://unsplash.com/photos/o4-YyGi5JBc
 excerpt: something
+layout: post
 math: true
 ---
 # Where were you?

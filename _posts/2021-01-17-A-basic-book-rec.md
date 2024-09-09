@@ -6,6 +6,7 @@ tags: [machine learning, pandas, gradient descent]     # TAG names should always
 image: /assets/img/posts/basic-book-rec/header.jpg # from https://unsplash.com/photos/mcSDtbWXUZU
 excerpt: something
 math: true
+layout: post
 ---
 # Why a Recommender?
 --------------------

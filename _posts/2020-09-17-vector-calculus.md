@@ -6,6 +6,7 @@ tags: [vectors, calculus, learning]     # TAG names should always be lowercase
 image: /assets/img/posts/vector-calculus/hurricane.jpg
 excerpt: something
 math: true
+layout: post
 ---
 
 # Introduction
