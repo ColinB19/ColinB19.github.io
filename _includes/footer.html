@@ -1,19 +1,20 @@
 <footer class="footer">
     <div class="footer-content">
-      <!-- Home Link -->
-      <a class="link" href="{{ site.baseurl }}/">Home</a>
-  
-      <!-- Username -->
-      <span>&copy; {{ site.username }}</span>
-  
-      <!-- Social Icons -->
-      <div class="footer-icons">
+
+      <!-- Links Section -->
+      <div class="footer-links">
+        <a class="link" href="{{ site.baseurl }}/">Home</a>
+        <a class="link" target="_blank" href="{{ '/assets/ColinBradley - DS - General.pdf' }}" download>Resume</a>
+      </div>
+
+    <!-- Social Icons -->
+    <div class="footer-icons">
         <a aria-label="Send email" href="mailto:{{ site.social.email }}"><i class="icon fa fa-envelope"></i></a>
         <a aria-label="My LinkedIn" target="_blank" href="{{ site.social.linkedin }}"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
         <a aria-label="My Github" target="_blank" href="{{ site.social.github }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-      </div>
+        </div>
     </div>
-</footer>
+  </footer>
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
