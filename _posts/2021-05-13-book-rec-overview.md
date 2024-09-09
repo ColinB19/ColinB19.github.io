@@ -7,6 +7,7 @@ image: /assets/img/posts/book-rec/header1.jpg #https://unsplash.com/photos/o4-Yy
 excerpt: something
 layout: post
 math: true
+image_alt: a
 ---
 # Where were you?
 ----------------------------

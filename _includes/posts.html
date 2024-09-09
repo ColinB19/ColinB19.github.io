@@ -6,7 +6,7 @@
   {% for post in site.posts %}
   <div class="post-wrapper">
     <div class="post-image">
-      <img src="{{ "post.image" | prepend: site.baseurl }}" alt="Mountains"/>
+      <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.image_alt}}"/>
     </div>
     <div class="post-content">
       <h3>{{ post.title }}</h3>

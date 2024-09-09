@@ -7,6 +7,7 @@ image: /assets/img/posts/basic-book-rec/header.jpg # from https://unsplash.com/p
 excerpt: something
 math: true
 layout: post
+image_alt: a
 ---
 # Why a Recommender?
 --------------------

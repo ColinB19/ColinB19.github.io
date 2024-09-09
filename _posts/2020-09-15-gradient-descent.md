@@ -7,6 +7,7 @@ image: /assets/img/posts/gradient-descent/gd.jpg
 excerpt: something
 math: true
 layout: post
+image_alt: skate park
 ---
 
 # Gradient Descent

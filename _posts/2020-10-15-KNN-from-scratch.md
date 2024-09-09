@@ -7,6 +7,7 @@ image: /assets/img/posts/knn/knn.jpg
 excerpt: something
 math: true
 layout: post
+image_alt: a
 ---
 
 Let's look at coding up one of the simplest machine learning (ML) algorithms: k-Nearest-Neighbors (kNN). kNN is a supervised ML algorithm that classifies an object based on some distance metric from other labeled objects. The idea is, for a given item, you will calculate the distance between that item and all other items. You then take the k-nearest-neighbors and then they vote on what the item label should be.

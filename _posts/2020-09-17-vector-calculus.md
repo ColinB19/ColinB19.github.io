@@ -7,6 +7,7 @@ image: /assets/img/posts/vector-calculus/hurricane.jpg
 excerpt: something
 math: true
 layout: post
+image_alt: a
 ---
 
 # Introduction
