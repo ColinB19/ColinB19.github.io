@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body class="{% if page.url == '/' %}index-page{% else %}other-page{% endif %}">
+  <body>
     {% include page_header.html %}
-    <section>
+    
+    <main class="post">
+      <article>
+        <header class="post-header">
+          <h1>{{ page.title }}</h1>
+          <p class="post-meta">
+            <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+            <span class="post-categories">
+              Categories: {{ page.categories | join: ", " }}
+            </span>
+          </p>
+          {% if page.image %}
+          <figure>
+            <img src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}">
+          </figure>
+          {% endif %}
+        </header>
+
+        <div class="post-content">
+          {{ content }}
+        </div>
+      </article>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include page_header.html %}
+    <section id="post_content">
       <article>
         <h2>{{ page.title }}</h2>
         <p>Published on {{ page.date | date: "%B %d, %Y" }}</p>
@@ -11,4 +44,4 @@
       </article>
     </section>
       {% include footer.html %}
-  </body>
+  </body> -->
