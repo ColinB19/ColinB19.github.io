@@ -2,21 +2,13 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <header>
-      <h1>{{ site.title }}</h1>
-      <nav>
-        <ul>
-          <li><a href="{{ site.baseurl }}">Home</a></li>
-          <li><a href="{{ site.baseurl }}/posts">Posts</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+    {% include page_header.html %}
+    <section>
       <article>
         <h2>{{ page.title }}</h2>
         <p>Published on {{ page.date | date: "%B %d, %Y" }}</p>
         <div>{{ content }}</div>
       </article>
-    </main>
+    </section>
       {% include footer.html %}
   </body>
