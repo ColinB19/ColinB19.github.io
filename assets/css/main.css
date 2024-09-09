@@ -5289,9 +5289,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Space between the items */
+    gap: 20px;  Space between the items 
     padding: 15px 0;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap; Allows wrapping on smaller screens 
     text-align: center;
 }
 
