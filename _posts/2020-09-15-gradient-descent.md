@@ -1,8 +1,8 @@
 ---
-title: Gradient Descent
+title: gradient-descent
 date: 2020-09-15 16:00:00 +/-0800
-categories: [Data Science, From Scratch Algorithms]
-tags: [jupyter, learning, machine learning]     # TAG names should always be lowercase
+# categories: [data-science, from-scratch-algorithms]
+# tags: [jupyter, learning, machine-learning]     # TAG names should always be lowercase
 image: /assets/img/posts/gradient-descent/gd.jpg
 excerpt: something
 math: true

@@ -1,7 +1,7 @@
 # Site settings
 title: Data Motivated
 description: A Data Science Portfolio and Blog
-baseurl: "/ColinB19.github.io" # the subpath of your site, e.g. /blog
+# baseurl: "/ColinB19.github.io" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
