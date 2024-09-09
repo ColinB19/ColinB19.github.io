@@ -39,3 +39,4 @@ exclude: ['package.json', 'src' , 'node_modules']
 # baseurl: ColinB19.github.io # for local testing, or "/repository-name" for GitHub Pages
 # sass:
 #   sass_dir: src
+permalink: /:categories/:year/:month/:day/:title/
