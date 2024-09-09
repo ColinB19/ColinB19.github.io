@@ -5209,20 +5209,28 @@ body {
     padding: 10px;
   }
 
-/*footer icons*/
-/* Footer Content Flexbox */
-.footer-content {
+/* Footer Container */
+.footer {
+    background: #1a222c;
+    padding: 10px 0;
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Footer Content Flexbox */
+  .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    flex-wrap: wrap;
   }
   
   /* Footer Links Container */
   .footer-links {
     display: flex;
     gap: 20px;
+    justify-content: flex-start; /* Aligns links to the left */
   }
   
   /* Footer Links */
@@ -5239,7 +5247,7 @@ body {
   /* Footer Icons Container */
   .footer-icons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Aligns icons to the right */
     gap: 10px;
   }
   
