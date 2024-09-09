@@ -11,7 +11,7 @@
     <div class="post-content">
       <h3>{{ post.title }}</h3>
       <p>{{ post.excerpt }}</p>
-      {{% if post.link %}}
+      {% if post.link %}
         <a class="project-link" href="{{ post.link }}">Check it out</a>
       {% else %}
         <a class="project-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">Check it out</a>
