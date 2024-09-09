@@ -1,6 +1,14 @@
 <footer class="footer">
-    <p>&copy; {{site.username}}</p>
-    <p>Build with Jekyll and <span class="love">❤</span> by <a href="https://github.com/nrandecker">Nathan Randecker</a></p>
+    <div class="footer-icons">
+        <!-- Smaller Social Icons -->
+        <a aria-label="Send email" href="mailto:{{ site.social.email }}"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My LinkedIn" target="_blank" href="{{ site.social.linkedin }}"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        <a aria-label="My Github" target="_blank" href="{{ site.social.github }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+      </div>
+    
+      <!-- Username and Home link in a line below -->
+      <p>&copy; {{ site.username }}</p>
+      <p><a class="link" href="{{ site.baseurl }}/">Home</a></p>
 </footer>
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
