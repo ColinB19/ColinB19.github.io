@@ -40,5 +40,13 @@ exclude: ['package.json', 'src' , 'node_modules']
 # sass:
 #   sass_dir: src
 # permalink: /:categories/:year/:month/:day/:title/
+
+# syntax highlighting
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: True
