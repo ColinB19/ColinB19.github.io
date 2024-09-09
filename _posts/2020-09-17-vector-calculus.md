@@ -4,6 +4,7 @@ date: 2020-09-17 00:15:00 +/-0800
 categories: [Physics and Math, Math]
 tags: [vectors, calculus, learning]     # TAG names should always be lowercase
 image: /assets/img/posts/vector-calculus/hurricane.jpg
+excerpt: something
 math: true
 ---
 

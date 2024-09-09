@@ -3,48 +3,16 @@
 </div>
 
 <section id="posts">
+  {% for post in site.posts %}
   <div class="post-wrapper">
     <div class="post-image">
       <img src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" alt="Mountains"/>
     </div>
     <div class="post-content">
-      <h3>Gradient Descent from Scratch</h3>
-      <p>Have you ever wondered what makes gradient descent tick? Well check out my write-up on how to code it up from scratch in Python! You'll learn all the inner details of gradient descent so you can understand your favorite ML frameworks even better!</p>
-      <a class="project-link" href="{{ site.baseurl }}/2020-09-15-gradient-descent">Check it out</a>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt }}</p>
+      <a class="project-link" href="{{ post.url }}">Check it out</a>
     </div>
   </div>
-
-  <!-- Add more post-wrapper divs for additional posts -->
-  <div class="post-wrapper">
-    <div class="post-image">
-      <img src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" alt="Mountains"/>
-    </div>
-    <div class="post-content">
-      <h3>Gradient Descent from Scratch</h3>
-      <p>Have you ever wondered what makes gradient descent tick? Well check out my write-up on how to code it up from scratch in Python! You'll learn all the inner details of gradient descent so you can understand your favorite ML frameworks even better!</p>
-      <a class="project-link" href="{{ site.baseurl }}/2020-09-15-gradient-descent">Check it out</a>
-    </div>
-  </div>
-
-  <div class="post-wrapper">
-    <div class="post-image">
-      <img src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" alt="Mountains"/>
-    </div>
-    <div class="post-content">
-      <h3>Gradient Descent from Scratch</h3>
-      <p>Have you ever wondered what makes gradient descent tick? Well check out my write-up on how to code it up from scratch in Python! You'll learn all the inner details of gradient descent so you can understand your favorite ML frameworks even better!</p>
-      <a class="project-link" href="{{ site.baseurl }}/2020-09-15-gradient-descent">Check it out</a>
-    </div>
-  </div>
-
-  <div class="post-wrapper">
-    <div class="post-image">
-      <img src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" alt="Mountains"/>
-    </div>
-    <div class="post-content">
-      <h3>Gradient Descent from Scratch</h3>
-      <p>Have you ever wondered what makes gradient descent tick? Well check out my write-up on how to code it up from scratch in Python! You'll learn all the inner details of gradient descent so you can understand your favorite ML frameworks even better!</p>
-      <a class="project-link" href="{{ site.baseurl }}/2020-09-15-gradient-descent">Check it out</a>
-    </div>
-  </div>
+  {% endfor %}
 </section>

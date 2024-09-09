@@ -4,6 +4,7 @@ date: 2021-01-16 12:00:00 +/-0800
 categories: [Data Science, Book Recommender]
 tags: [machine learning, pandas, gradient descent]     # TAG names should always be lowercase
 image: /assets/img/posts/basic-book-rec/header.jpg # from https://unsplash.com/photos/mcSDtbWXUZU
+excerpt: something
 math: true
 ---
 # Why a Recommender?

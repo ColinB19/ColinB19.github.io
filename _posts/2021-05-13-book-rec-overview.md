@@ -4,6 +4,7 @@ date: 2021-05-13 12:00:00 +/-0800
 categories: [Data Science, Book Recommender]
 tags: [machine learning, flask, Postgres]
 image: /assets/img/posts/book-rec/header1.jpg #https://unsplash.com/photos/o4-YyGi5JBc
+excerpt: something
 math: true
 ---
 # Where were you?
