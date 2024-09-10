@@ -4,7 +4,7 @@ date: 2020-09-15 16:00:00 +/-0800
 categories: [Data Science, From Scratch Algorithms]
 tags: [jupyter, learning, machine learning]     # TAG names should always be lowercase
 image: /assets/img/posts/gradient-descent/gd.jpg
-excerpt: something
+excerpt: Let's implement basic gradient descent from scratch! This is a great way to get started understanding the fundamentals of machine learning.
 math: true
 layout: post
 image_alt: skate park
