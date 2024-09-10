@@ -5069,24 +5069,26 @@ body {
     .contents-right,
     .images-right {
         float: right;
-        width: 40%;
+        width: 48%;
     }
 
     .images-right img {
         float: right;
         max-width: 100%; /* Ensures the image fits within the container */
         height: auto; /* Maintains aspect ratio */
+        object-fit: contain; /* Makes sure the image fits within the boundaries without overflow */
     }
 
     .images-left {
         float: left;
-        width: 40%;
+        width: 48%;
     }
 
     .images-left img {
         float: left;
         max-width: 100%; /* Ensures the image fits within the container */
         height: auto; /* Maintains aspect ratio */
+        object-fit: contain; /* Makes sure the image fits within the boundaries without overflow */
     }
 }
 
