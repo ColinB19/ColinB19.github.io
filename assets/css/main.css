@@ -5069,7 +5069,7 @@ body {
     .contents-right,
     .images-right {
         float: right;
-        width: 45%;
+        width: 40%;
     }
 
     .images-right img {
@@ -5080,7 +5080,7 @@ body {
 
     .images-left {
         float: left;
-        width: 45%;
+        width: 40%;
     }
 
     .images-left img {
