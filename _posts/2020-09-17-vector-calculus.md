@@ -4,7 +4,7 @@ date: 2020-09-17 00:15:00 +/-0800
 categories: [Physics and Math, Math]
 tags: [vectors, calculus, learning]     # TAG names should always be lowercase
 image: /assets/img/posts/vector-calculus/hurricane.jpg
-excerpt: something
+excerpt: A brief introduction (or review if you're familiar already) to vector calculus. We go over basic vector operations, how calculus can be done with vectors, and some useful vector calculus theorems.
 math: true
 layout: post
 image_alt: a

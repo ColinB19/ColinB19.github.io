@@ -4,7 +4,7 @@ date: 2021-05-13 12:00:00 +/-0800
 categories: [Data Science, Book Recommender]
 tags: [machine learning, flask, Postgres]
 image: /assets/img/posts/book-rec/header1.jpg #https://unsplash.com/photos/o4-YyGi5JBc
-excerpt: something
+excerpt: An overview of my full stack book recommender project. We''ll briefly talk about the recommender system, it's deployment and the app that serves users!
 layout: post
 math: true
 image_alt: a

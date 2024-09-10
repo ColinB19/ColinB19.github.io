@@ -4,7 +4,7 @@ date: 2020-10-15 14:00:00 +/-0800
 categories: [Data Science, From Scratch Algorithms]
 tags: [jupyter, learning, machine learning]     # TAG names should always be lowercase
 image: /assets/img/posts/knn/knn.jpg
-excerpt: something
+excerpt: Let's build k-Nearest-Neighbors from scratch! A super simple, yet powerful, machine learning algorithm that can help with classification problems!
 math: true
 layout: post
 image_alt: a
