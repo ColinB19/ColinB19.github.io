@@ -5077,7 +5077,7 @@ body {
 
     .images-right img {
         float: right;
-        max-width: 100%; /* Ensures the image fits within the container */
+        max-width: 50%; /* Ensures the image fits within the container */
         height: auto; /* Maintains aspect ratio */
     }
 
@@ -5088,7 +5088,7 @@ body {
 
     .images-left img {
         float: left;
-        max-width: 100%; /* Ensures the image fits within the container */
+        max-width: 50%; /* Ensures the image fits within the container */
         height: auto; /* Maintains aspect ratio */
     }
 }
