@@ -5030,8 +5030,56 @@ sup {
     }
 }
 
-.user-projects {
+/* .user-projects {
     margin: 20px auto
+} */
+
+
+
+/* 
+@media only screen and (min-width:550px) {
+    .contents {
+        margin-left: 0;
+        width: 45%
+    }
+
+    .contents-right {
+        margin-top: -5%
+    }
+
+    .contents-right,
+    .images-right {
+        float: right;
+        width: 48%;
+    }
+
+    .images-right img {
+        float: right;
+        max-width: 100%; 
+        height: auto; 
+        object-fit: contain; 
+    }
+
+    .images-left {
+        float: left;
+        width: 48%;
+    }
+
+    .images-left img {
+        float: left;
+        max-width: 100%; 
+        height: auto;
+        object-fit: contain; 
+    }
+} */
+
+
+
+/* Flexbox-based layout for the user-projects section */
+.user-projects {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
 }
 
 .user-projects img {
@@ -5055,42 +5103,52 @@ body {
 }
 
 
-
-@media only screen and (min-width:550px) {
-    .contents {
-        margin-left: 0;
-        width: 45%
-    }
-
-    .contents-right {
-        margin-top: -5%
-    }
-
-    .contents-right,
-    .images-right {
-        float: right;
-        width: 48%;
-    }
-
-    .images-right img {
-        float: right;
-        max-width: 100%; /* Ensures the image fits within the container */
-        height: auto; /* Maintains aspect ratio */
-        object-fit: contain; /* Makes sure the image fits within the boundaries without overflow */
-    }
-
-    .images-left {
-        float: left;
-        width: 48%;
-    }
-
-    .images-left img {
-        float: left;
-        max-width: 100%; /* Ensures the image fits within the container */
-        height: auto; /* Maintains aspect ratio */
-        object-fit: contain; /* Makes sure the image fits within the boundaries without overflow */
+@media only screen and (min-width: 550px) {
+    .user-projects {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 }
+
+/* Ensure images in user-projects are sized and positioned correctly */
+.images-right img,
+.images-left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image inside its flexbox container */
+}
+
+/* Make contents and images occupy half of the available space on wider screens */
+@media only screen and (min-width: 550px) {
+    .contents,
+    .images-right,
+    .images-left {
+        width: 48%;
+    }
+    
+    /* Align content next to the image */
+    .contents {
+        margin-left: 0;
+    }
+}
+
+/* Specific styling for images-right and images-left */
+.images-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.images-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+
 
 .project-link {
     display: inline-block;
