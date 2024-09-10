@@ -5054,6 +5054,11 @@ body {
     margin-right: 5px
 }
 
+.images-right img {
+    float: none; /* Resets any previous float */
+}
+
+
 @media only screen and (min-width:550px) {
     .contents {
         margin-left: 0;
