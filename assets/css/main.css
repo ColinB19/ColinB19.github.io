@@ -5054,21 +5054,22 @@ body {
     margin-right: 5px
 }
 
-.user-projects::after {
+/* .user-projects::after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 
 @media only screen and (min-width:550px) {
     .contents {
         margin-left: 0;
-        width: 45%
+        width: 30%;
+        margin-top: -5%;
     }
 
     .contents-right {
-        margin-top: -5%
+        margin-top: -5%;
     }
 
     .contents-right,
